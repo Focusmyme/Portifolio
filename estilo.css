@@ -1,0 +1,93 @@
+@charset "UTF-8";   
+
+    /* links das fontes usadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* tipografia */
+
+:root {
+
+    --fonteProgr:"Chakra Petch", sans-serif;
+    --fontForte:"Rowdies", sans-serif;
+    --fonteRedonda:"Concert One", sans-serif;
+}
+
+/* Configuração geral */
+
+* {padding: 0px;
+    margin: 0px;}
+
+/* configuração seletiva */
+
+/* Cabeçalho */
+
+header {background-color: #1fe76c;
+    }
+
+header > h2 {background-color: rgba(255, 255, 255, 0.295);
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    max-height: 40px;
+    margin: auto;
+    font-family: var(--fonteProgr);
+    }
+
+#recebimento {text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;}
+
+#inome {width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;}
+
+.buttonheader {border-radius: 10px;
+    padding: 10px;}
+
+#headersec {display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px ;}
+
+#sec1h {display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 0px 80px 20px 80px;
+    }
+
+#sec1h > img {max-width: 330px;
+        max-height: 330px;
+        animation: slide 8s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+     }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#sec1h > p {color: white;
+    font-family: var(--fonteProgr);
+    text-shadow: 1px 1px 3px #1bc95e;
+    width: 700px;
+    font-size: 30px;
+    padding-top: 10px;
+    }
+
+
+.p2h {text-align: justify;
+    padding-bottom: 10px;}
