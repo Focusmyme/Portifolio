@@ -1,12 +1,18 @@
+function enviar() {
 
-function clicar() {
+let nome = window.document.getElementById('inome').value
+let exib1 = window.document.getElementById('exib1')
+let erro = window.document.getElementById('erro')
 
-let valor = document.getElementById('inome').value;
-let nomes = window.document.getElementById('nomes');
+
+erro.style = 'color:red; font-size:10px'
 
 
-nomes.innerHTML = `Olá <strong>${valor}</strong>, Seja bem Vindo!`;
+if (nome === '') {
 
-if (valor == '') {nomes.innerHTML = `[ERRO] Você Não Digitou Seu Nome.`}
-
+    exib1.innerText = '[ERRO] Escreva Seu Nome Na Parte Superior da Página'
+    erro.innerText = 'Você Não Me Disse Seu Nome'
+} else {exib1.innerHTML = `Olá, ${nome}! &#9996;&#65039;`
+    erro.innerText = 'Que Nome Bonito o Seu!'
+    erro.style = 'color:white;'}
 }

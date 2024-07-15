@@ -4,78 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link para página CSS -->
+    <!-- link css -->
 
     <link rel="stylesheet" href="estilo.css">
 
-    <!-- Favicon -->
+    <!-- favicon -->
 
     <link rel="shortcut icon" href="medias/favicon/favicon.ico" type="image/x-icon">
 
 
-    <title>Meu Currículo</title>
+    <title>Meu currículo</title>
 </head>
 <body>
 
-<!-- cabeçalho -->
+    <!-- cabeçalho -->
+     
+    <header>
 
-<header>  
-
-    <section id="recebimento">
-        
-        <input type="text" name="nome" id="inome" required placeholder=" Digite Seu Primeiro Nome Aqui" autocomplete="off" maxlength="14">
-
-        <input class="buttonheader" type="button" value="Enviar" onclick="clicar()">
-
-    </section>
-
-    <h2 id="nomes">Olá...</h2>    
-
-    <section id="headersec">
-
-        <div id="sec1h">
-
-
-             <p class="p2h">Meu nome é<strong> David Eliezer</strong>. Sou iniciante em <strong>desenvolvimento Front-End</strong> e estou em busca do meu primeiro emprego na área. Acredito que tenho as habilidades e a determinação necessária para ser um <strong>desenvolvedor Front-End</strong> competente. Nesta página, você poderá conhecer um pouco mais sobre mim e as habilidades que adquiri até agora.</p>
+        <section id="sec1header">
+    
+            <p class="pheader">
+                <input type="text" name="nome" id="inome" autocomplete="off" maxlength="11" max="11">
+                <input class="button" type="button" onclick="enviar()" value="Enviar">
+            </p>
     
     
+            <nav>
     
-
-            <img src="imagens/hand-coding-concept-illustration.png" alt="programandoAmao">
-
-        </div>
-    </section>
-
-
-</header>
-
-<!-- menu principal -->
-
-<main>
-
-    <section id="sec1m">
-
-        <img src="imagens/menina-sentada-usando-pc.png" alt="representação de uma programadora utilizando o computador">
-
-
-        
-
-
-    </section>
-
+                <section class="sec1nav">
+                    <img src="imagens/linkedin_174857.png" alt="logo do linkedin"><a href="">LinkedIn</a>
+                </section>
     
-
-
-</main>
-
-<!-- rodapé -->
+                <hr>
     
-<footer>
+                <section class="sec2nav">
+                    <img src="imagens/github_5968866.png" alt="logo do github">
+                    <a href="https://github.com/Focusmyme" target="_blank">GitHub</a>
+                </section>
+            </nav>
+    
+        </section>
+
+        <p id="erro">Digite Seu Nome no Campo Acima &#8593;</p>
+
+    </header> 
+
+    <!-- menu principal -->
+
+    <main>
+
+        <h2 id="exib1">Olá...</h2>
 
 
+        <section id="sec1main">
 
-</footer>
+            <p class="p1main">Meu nome é David Eliezer. Sou iniciante no ramo da programação e estou entusiasmado para compartilhar minhas habilidades com você. Nesta página, você encontrará uma visão geral do que já aprendi em HTML, CSS e JavaScript.
+            <br>
+            Minha jornada de aprendizado está sempre em andamento, e esta página será constantemente atualizada à medida que eu adquira mais conhecimentos, incluindo animações, interações e outros conteúdos. Além disso, vou recomendar cursos e sites úteis para quem está começando na área, assim como eu.
+            <br> 
+            O objetivo desta página é não apenas mostrar o que sei, mas também ajudar outros iniciantes. Espero que, ao demonstrar minhas habilidades, eu possa conquistar minha primeira vaga como desenvolvedor frontend.</p>
 
-<script src="script.js"></script>
+            <img class="img1main" src="imagens/vetor-pc.png" alt="vetor pc">
+
+
+        </section>
+
+        <section id="sec2main">
+
+            <section class="sec3main">
+
+                <h2>HTML / CSS</h2>
+    
+                <p class="p1sec3">Meus estudos de HTML e CSS foram extremamente proveitosos. Com os conhecimentos adquiridos, sinto-me capaz de criar um site com uma estrutura bem organizada e semântica adequada. Sou capaz de desenvolver animações, formulários, tabelas, e muito mais. Além disso, compreendo a importância de criar um design responsivo que funcione bem em diferentes dispositivos e tamanhos de tela.</p>
+            
+                <h3>Habilidades Adquiridas</h3>
+                <ul class="ulsec3">
+                    <li><strong>Estruturação de Páginas:</strong> Uso de tags semânticas para garantir uma estrutura clara e acessível.</li>
+                    <li><strong>Estilização com CSS:</strong> Aplicação de estilos avançados, incluindo flexbox e grid, para criar layouts atraentes e funcionais.</li>
+                    <li><strong>Animações:</strong> Criação de animações suaves usando CSS, adicionando dinamismo e interatividade às páginas.</li>
+                    <li><strong>Formulários e Tabelas:</strong> Desenvolvimento de formulários funcionais e tabelas organizadas para coleta e exibição de dados.</li>
+                    <li><strong>Design Responsivo:</strong> Utilização de media queries para garantir que os sites sejam visualmente agradáveis e funcionais em dispositivos móveis, tablets e desktops.</li>
+                </ul>
+                <h3 class="h3sec3">Ambições e Objetivos</h3>
+                <p class="p2sec3">Embora ainda haja muitas tags e técnicas para explorar, estou empolgado para continuar aprendendo e aperfeiçoando minhas habilidades. Meu objetivo é criar sites bem elaborados, que sejam não apenas funcionais, mas também esteticamente agradáveis..
+                <br>
+                Estou confiante de que, com o meu atual repertório de tags e conhecimento de estilo com CSS, consigo desenvolver sites de alta qualidade. A cada novo projeto, busco aprender e implementar novas técnicas, aprimorando continuamente meu trabalho e me aproximando cada vez mais do objetivo de me tornar um desenvolvedor frontend completo.</p>
+
+            </section>
+
+            <section class="sec4main">
+    
+                <img src="imagens/html_1051277.png" alt="logo html">
+
+                <img src="imagens/CSS.png" alt="css logo">
+    
+            </section>
+
+        </section>
+
+
+    </main>
+
+    <!-- link Java Script -->
+
+    <script src="script.js"></script>
 </body>
 </html>
