@@ -12,6 +12,16 @@
     --fontForte: "Rowdies", sans-serif;
     --fonteRedonda: "Concert One", sans-serif;
     --fonteSuave:"Raleway", sans-serif;
+
+    /* cores */
+
+    --Cinza:rgb(41, 40, 40);
+    --laranjaHTML:rgb(255, 100, 11);
+    --AzulCSS:rgb(38, 77, 228);
+    --borda:rgb(0, 0, 0);
+    --BOXshadow:rgba(0, 0, 0, 0.151);
+    --FundoNavegacao:rgba(255, 68, 0, 0.336);
+
 }
 
 /* Configuração geral */
@@ -19,6 +29,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;}
+   
 
 header {padding: 30px 30px 20px 30px;
     background-color: rgb(41, 40, 40);
@@ -117,12 +128,13 @@ main {font-family: var(--fonteProgr);}
     color: white;
     padding-left: 10px;
     background-color: rgba(0, 0, 0, 0.274);
-    width: 250px;
-    border-radius: 0px 5px 5px 0px;}
+    width: 700px;
+    border-radius: 0px 5px 5px 0px;
+    display: none;}
 
 #sec1main {display: flex;
     align-items: center;
-    height: 350px;
+    height: 400px;
     padding: 0px 10px 0px 10px;
 }
 
@@ -140,19 +152,24 @@ main {font-family: var(--fonteProgr);}
 
 .sec3main {color: white;}
 
+.sech2 {background-color:rgb(227, 76, 38);
+    transition: background-color 0.8s ease;
+    width: 200px;}
 
-.sec3main > h2 {color: white;
-    background-color:rgb(227, 76, 38);
+.sech2:hover {background-color: rgb(38, 77, 228);
+    transition: background-color 0.8s ease;}
+
+.h2sec3main {color: white;
     transition: background-color 0.2s ease;
     width: 200px;
     padding: 2px 0px 2px 1px;
     transform: translateX(0px);
-    transition: transform 1s ease, background-color 0.8s ease;
+    transition: transform 1s ease;
 
     }
 
-.sec3main > h2:hover {background-color: rgb(38, 77, 228);transform: translateX(10px);
-    transition: background-color 0.8s ease, transform 1s ease;
+.h2sec3main:hover {transform: translateX(10px);
+    transition: transform 1s ease;
     }
 
 .sec3main > h3 {margin: 10px 0px 10px 0px;
@@ -173,4 +190,39 @@ main {font-family: var(--fonteProgr);}
 .sec4main {display: flex;
     flex-direction: column;}
 
-.sec4main > img {width: 200px;}
+.sec4main > img {width: 240px;}
+
+.img1sec4main {padding: 50px 0px 30px 0px;
+    margin-left: 150px;
+    position: relative;
+      animation-name: bounce;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        top: 0;
+      }
+      50% {
+        top: 50px;
+      }
+    }
+.img2sec4main {margin-left: 150px;
+     position: relative;
+      animation-name: bounce;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        top: 0;
+      }
+      50% {
+        top: 50px;
+      }
+    }
+
