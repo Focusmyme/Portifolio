@@ -17,3 +17,6 @@ exib1.innerHTML = `Olá, ${nome}! &#9996;&#65039;`
 erro.innerText = 'Que Nome Bonito o Seu!'
 erro.style = 'color:white; font-size: 15px'}
 }
+
+
+

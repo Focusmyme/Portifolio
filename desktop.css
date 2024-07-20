@@ -34,7 +34,11 @@
 header {padding: 30px 30px 20px 30px;
     background-color: rgb(41, 40, 40);
     font-family: var(--fonteProgr);
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 2px 0px 2px black;}
 
 #sec1header {display: flex;
     justify-content: space-between;
@@ -120,7 +124,8 @@ header {padding: 30px 30px 20px 30px;
 
 /* menu principal */
 
-main {font-family: var(--fonteProgr);}
+main {font-family: var(--fonteProgr);
+    padding-top: 100px;}
 
 #exib1 {margin-top: 15px;
     margin-bottom: -25px;
@@ -225,4 +230,39 @@ main {font-family: var(--fonteProgr);}
         top: 50px;
       }
     }
+
+    /* parte 3 menu principal */
+
+#sec5main {display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;}
+
+.p1sec6 {padding: 5px 20px 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+    text-align: justify;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 10px;}
+
+.sec7main > img {width: 250px;
+    margin-left: 240px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    animation-name: fade;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
 
